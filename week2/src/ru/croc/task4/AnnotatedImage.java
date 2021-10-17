@@ -1,4 +1,4 @@
-package task4;
+package ru.croc.task4;
 
 import java.lang.annotation.Annotation;
 

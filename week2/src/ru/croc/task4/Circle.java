@@ -1,4 +1,4 @@
-package task4;
+package ru.croc.task4;
 
 public class Circle implements Figure{
     private  int x;
