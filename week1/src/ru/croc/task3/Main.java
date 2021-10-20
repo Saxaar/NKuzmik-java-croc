@@ -31,14 +31,19 @@ public class Main {
 
         System.out.println("MAX = " + getMax(arr));
         System.out.println("MIN = " + getMin(arr));
-
+            // можно сделать лучше алгоритм перестановки, но я устал, сори
         int c = getMax(arr);
         int z = getMin(arr);
+        int tmp3 = arr[0];
+        int tmp4 = arr[a-1];
         arr[tmp2] = arr[0];
         arr[tmp1]= arr[a-1];
+        arr[a-1] = c;
+        arr[0] = z;
+        arr[tmp2] = tmp4;
+        arr[tmp1] = tmp3;
         arr[0] = z;
         arr[a-1] = c;
-
         // После сортировки
         for (int i = 0; i < arr.length; i++) {
             System.out.print(" "+arr[i]);

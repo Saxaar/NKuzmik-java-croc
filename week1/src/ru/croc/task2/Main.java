@@ -3,15 +3,15 @@ package ru.croc.task2;
 import java.util.Scanner;
 
 public class Main {
-    static int i;
+    //static int i;
     public static void main(String[] args) {
-        //int i;
+        int i;
         Scanner scanner = new Scanner(System.in);
         long a = scanner.nextLong();
         float b = a;
-        for (i = 0; b > 1024;) {
+        for (i = 0; b > 1024;i++) {
             b = b /1024;
-            i++;
+            //i++;
         }
 
             switch (i) {
