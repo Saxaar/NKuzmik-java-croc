@@ -19,7 +19,7 @@ public class Circle implements Figure{
     }
     @Override
     public String toString() {
-        return this.name + " (" + this.x + ", " + this.y +  "), " +this.r + ": ";
+        return   " (" + this.x + ", " + this.y +  "), " +this.r + ": " + this.name;
     }
 
     public int getX() {

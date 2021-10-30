@@ -20,7 +20,7 @@ public class Rectangle implements Figure {
 
     @Override
     public String toString() {
-        return this.name + " (" + this.x1 + ", " + this.y1 + "), "+"( "+ this.x2 + this.y2 + " ): ";
+        return " (" + this.x1 + ", " + this.y1 + "), "+"( "+ this.x2 +","+" "+ this.y2 + " ): " + this.name ;
     }
 
     public int getX1() {

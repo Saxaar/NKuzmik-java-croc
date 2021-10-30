@@ -5,9 +5,9 @@ public class Annotation {
         private Figure figure;
         private String data;
 
-        public Annotation(Figure figure, String data) {
-            this.figure = figure;
+        public Annotation(String data, Figure figure) {
             this.data = data;
+            this.figure = figure;
         }
 
         public String getData() {
@@ -19,7 +19,7 @@ public class Annotation {
 
         @Override
         public String toString() {
-            return figure.toString() + data;
+            return  data + figure.toString() ;
         }
 
         public Figure getFigure() {
