@@ -5,7 +5,9 @@ import java.util.Scanner;
 public class Main {
     static int tmp1 =0;
     static int tmp2 =0;
+
     public static void main(String[] args) {
+
         //Объявляем длину массива
         int a = 0;
         int min =0;
