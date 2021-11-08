@@ -5,26 +5,20 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
-
         getWordCount("c:/Users/kuzmi/Desktop/File.txt");
     }
 
-
         public static void getWordCount(String filename) throws FileNotFoundException{
             File file = new File(filename);
-            Scanner scanner = new Scanner(file);
-            int words = 0;
-            int lines = 0;
+            int count = 0;
+            try(Scanner sc = new Scanner(new FileInputStream(file))) {
 
-            while (scanner.hasNextLine()) {
-                lines++;
-                String[] array = scanner.nextLine().split(" ");
-                words = words + array.length;
+                while (sc.hasNext()) {
+                    sc.next();
+                    count++;
+                }
             }
-
-            System.out.println("Number of words: " + words);
-            System.out.println("Number of lines: " + lines);
-            scanner.close();
+            System.out.println("count : "+count);
         }
 }
 
