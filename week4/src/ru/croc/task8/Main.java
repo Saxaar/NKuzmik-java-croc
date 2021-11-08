@@ -5,7 +5,9 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
-        getWordCount("c:/Users/kuzmi/Desktop/File.txt");
+        getWordCount(args[0]);
+       /* System.out.println();
+        getWordCount("c:/Users/kuzmi/Desktop/File.txt");*/
     }
 
         public static void getWordCount(String filename) throws FileNotFoundException{
